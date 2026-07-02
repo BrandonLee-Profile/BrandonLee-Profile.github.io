@@ -105,10 +105,10 @@
     border-bottom:1px solid var(--line-soft);
     transition:transform .4s ease;
   }
-  .nav-inner{max-width:1120px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between}
+  .nav-inner{max-width:1120px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:28px}
   .nav-logo{font-family:var(--mono);font-size:13px;letter-spacing:0.18em;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:9px}
   .nav-logo .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
-  .nav-links{display:flex;gap:30px}
+  .nav-links{display:flex;gap:26px}
   .nav-links a{font-family:var(--mono);font-size:12px;letter-spacing:0.08em;color:var(--muted);text-decoration:none;text-transform:uppercase;transition:color .25s;position:relative}
   .nav-links a:hover{color:var(--gold-bright)}
   @media(max-width:760px){.nav-links{display:none}}
@@ -310,7 +310,7 @@
   .cursor.grow{width:62px;height:62px;background:rgba(216,169,76,.08);border-color:rgba(216,169,76,.7)}
   @media(hover:none),(max-width:760px){.cursor,.cursor-d{display:none}}
   .hero-spot{position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(420px circle at var(--mx,72%) var(--my,26%),rgba(216,169,76,.08),transparent 62%)}
-  .nav-clock{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:var(--muted);display:flex;align-items:center;gap:8px}
+  .nav-clock{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:var(--muted);display:flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0}
   .nav-clock #nyt{color:var(--gold-bright)}
   .nav-clock .clk-date{color:var(--muted);margin-left:8px;padding-left:8px;border-left:1px solid var(--line)}
   .ny-dot{width:6px;height:6px;border-radius:50%;background:var(--up);box-shadow:0 0 8px var(--up);animation:npulse 2s ease-in-out infinite}

@@ -10,6 +10,16 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Brandon Lee · Operations · Research · Markets">
 <meta property="og:description" content="Finance graduate and client-facing operator focused on operations, research, and markets in New York.">
+<meta property="og:url" content="https://brandonleeprofile.github.io/">
+<meta property="og:site_name" content="Brandon Lee">
+<meta property="og:image" content="https://brandonleeprofile.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Brandon Lee — Operations, Research & Markets">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brandon Lee · Operations · Research · Markets">
+<meta name="twitter:description" content="Finance graduate and client-facing operator focused on operations, research, and markets in New York.">
+<meta name="twitter:image" content="https://brandonleeprofile.github.io/og-image.png">
 <meta name="theme-color" content="#0d0a12">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -481,6 +491,21 @@
   .thesis-note .tn-k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:8px}
   .thesis-note p{color:var(--ink-dim);font-size:.95rem;font-weight:300;line-height:1.6}
   .thesis-disc{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.02em;margin-top:16px;opacity:.85}
+  .mkt-live{margin-top:30px}
+  .mkt-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .mkt-k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .mkt-sub{font-family:var(--mono);font-size:10px;letter-spacing:.03em;color:var(--muted)}
+  .mkt-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:16px}
+  @media(max-width:860px){.mkt-grid{grid-template-columns:1fr}}
+  .mkt-chart,.mkt-over{height:460px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--bg-soft)}
+  @media(max-width:860px){.mkt-over{height:430px}}
+  .mkt-chart .tradingview-widget-container,.mkt-over .tradingview-widget-container{height:100%;width:100%}
+  .web3{margin-top:42px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center;background:linear-gradient(135deg,var(--bg-soft),var(--bg-elev));border:1px solid var(--line);border-radius:8px;padding:30px 32px}
+  @media(max-width:760px){.web3{grid-template-columns:1fr;gap:20px;padding:24px 22px}}
+  .web3-k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
+  .web3-l h4{font-family:var(--serif);font-size:1.4rem;font-weight:500;margin:0 0 11px;color:var(--ink);letter-spacing:-.01em}
+  .web3-l p{color:var(--ink-dim);font-size:.96rem;font-weight:300;line-height:1.68;margin:0}
+  .web3-tags{display:flex;flex-wrap:wrap;gap:8px}
   /* ---------- now / current focus ---------- */
   .now-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
   @media(max-width:680px){.now-grid{grid-template-columns:1fr}}
@@ -1003,6 +1028,18 @@
         </div>
       </div>
     </div>
+    <div class="web3 reveal">
+      <div class="web3-l">
+        <span class="web3-k">Web3 &amp; on-chain</span>
+        <h4>Ethereum, hands-on</h4>
+        <p>Beyond following crypto as an investor, I build on it. I've written and deployed smart contracts to the Ethereum mainnet and created and minted NFTs end to end &mdash; working with Solidity, ERC-721 token standards, and the full path from writing a contract to getting it live on-chain.</p>
+      </div>
+      <div class="web3-tags">
+        <span class="tag">Solidity</span><span class="tag">Smart Contracts</span><span class="tag">Ethereum Mainnet</span>
+        <span class="tag">ERC-721 / NFTs</span><span class="tag">NFT Minting</span><span class="tag">On-chain Deployment</span>
+        <span class="tag">Wallets &amp; dApps</span><span class="tag">Web3</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1078,6 +1115,32 @@
         <div class="th-h"><span class="th-t">Gold &amp; fintech rails</span><span class="th-n">Hedge &middot; Access</span></div>
         <p>Gold as a real-asset hedge against debasement, paired with the fintech platforms broadening how a new generation invests.</p>
         <div class="th-tags"><span class="th-tag">IAU</span><span class="th-tag">HOOD</span></div>
+      </div>
+    </div>
+    <div class="mkt-live reveal">
+      <div class="mkt-head">
+        <span class="mkt-k">Tracking it live</span>
+        <span class="mkt-sub">Real-time during market hours · crypto 24/7 · via TradingView</span>
+      </div>
+      <div class="mkt-grid">
+        <div class="mkt-chart">
+          <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 28px);width:100%"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {"autosize":true,"symbol":"NASDAQ:NVDA","interval":"D","timezone":"America/New_York","theme":"dark","style":"1","locale":"en","hide_side_toolbar":true,"allow_symbol_change":true,"support_host":"https://www.tradingview.com"}
+            </script>
+          </div>
+        </div>
+        <div class="mkt-over">
+          <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 28px);width:100%"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Markets</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+            {"colorTheme":"dark","dateRange":"12M","showChart":true,"locale":"en","width":"100%","height":"100%","isTransparent":false,"showSymbolLogo":true,"showFloatingTooltip":true,"plotLineColorGrowing":"rgba(216,169,76,1)","plotLineColorFalling":"rgba(192,73,47,1)","gridLineColor":"rgba(120,120,120,0.10)","scaleFontColor":"rgba(244,240,232,0.7)","belowLineFillColorGrowing":"rgba(216,169,76,0.10)","belowLineFillColorFalling":"rgba(192,73,47,0.10)","tabs":[{"title":"AI & Semis","symbols":[{"s":"NASDAQ:NVDA"},{"s":"NASDAQ:AMD"},{"s":"NASDAQ:AVGO"},{"s":"NYSE:TSM"}]},{"title":"Power & Nuclear","symbols":[{"s":"NASDAQ:CEG"},{"s":"NYSE:VST"},{"s":"NYSE:CCJ"},{"s":"AMEX:URNM"}]},{"title":"Financials","symbols":[{"s":"NYSE:BAC"},{"s":"CBOE:CBOE"}]},{"title":"Gold & Fintech","symbols":[{"s":"AMEX:IAU"},{"s":"NASDAQ:HOOD"}]},{"title":"Crypto","symbols":[{"s":"BITSTAMP:BTCUSD"},{"s":"BITSTAMP:ETHUSD"}]}]}
+            </script>
+          </div>
+        </div>
       </div>
     </div>
     <div class="thesis-note reveal">
@@ -1251,7 +1314,6 @@
   clk();setInterval(clk,1000);
   // theme toggle
   (function(){var tb=document.getElementById('themeToggle');if(!tb)return;var mc=document.querySelector('meta[name=theme-color]');tb.addEventListener('click',function(){var isLight=document.documentElement.getAttribute('data-theme')==='light';if(isLight){document.documentElement.removeAttribute('data-theme');try{localStorage.setItem('theme','dark');}catch(e){}if(mc)mc.setAttribute('content','#0d0a12');}else{document.documentElement.setAttribute('data-theme','light');try{localStorage.setItem('theme','light');}catch(e){}if(mc)mc.setAttribute('content','#f3efe6');}if(window.__starsRedraw)window.__starsRedraw();});})();
-
   // custom cursor
   (function(){
     if(window.matchMedia && window.matchMedia('(hover:none)').matches)return;
